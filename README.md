@@ -1,28 +1,10 @@
-# 1st
-# FOR SIMPLE INTEREST 
-puts "Enter principal amount:" 
-p = Integer(gets.chomp) 
-puts "Enter number of years:" 
-t = Integer(gets.chomp) 
-puts "Enter rate of interest:" 
-r = Float(gets.chomp) 
-i = 1 
-while i <= t 
-interest = p * r * i * 0.01 
-puts "The simple interest for year #{i} is #{interest}" 
-i += 1 
-end 
-# FOR COMPOUND INTEREST 
-puts "Enter principal amount:" 
-p = Integer(gets.chomp) 
-puts "Enter number of years:" 
-t = Integer(gets.chomp) 
-puts "Enter rate of interest:" 
-r = Float(gets.chomp) 
-i = 1 
-while i <= t 
-interest = p * ((1 + r / 100) ** i - 1) 
-puts "The compound interest for year #{i} is #{interest}" 
-p += interest 
-i += 1 
-end 
+from PIL import Image   
+img=Image.open("shadow.jpg")   
+img.show()   
+img1=img.save("images.png")   
+img2=img.rotate(90)   
+img2.show()   
+img3=img.crop((100,100,400,400))   
+img3.show()   
+img4=img.resize((300,300))   
+img4.show()
